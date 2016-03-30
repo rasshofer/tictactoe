@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+    <string name="player">Spieler</string>
+    <string name="bot">Bot</string>
+    <string name="new_game">Neues Spiel</string>
+    <string name="result_default">0 : 0</string>
+    <string name="result_label">Spieler : Bot</string>
+    <string name="splash_player">Du hast in %1$s Zügen gewonnen!</string>
+    <string name="splash_bot">Der Bot hat dich in %1$s Zügen geschlagen!</string>
+    <string name="splash_nobody">Es ist unentschieden!</string>
+</resources>

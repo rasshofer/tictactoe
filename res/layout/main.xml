@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/nav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@color/nav_background">
+	    	<TextView
+	    	    android:layout_width="0dp"
+	    	    android:layout_weight=".25"
+	    	    android:layout_height="wrap_content"
+	    	    android:padding="10dp"
+	    	    android:text="@string/player"
+	    	    android:textColor="@color/player"
+	    	    android:textSize="12sp"
+	    	    android:textStyle="bold"
+	    	    android:typeface="sans"
+	    	    android:textAllCaps="true" />
+	    	<TextView
+	    	    android:id="@+id/player"
+	    	    android:layout_width="0dp"
+	    	    android:layout_weight=".25"
+	    	    android:layout_height="wrap_content"
+	    	    android:padding="10dp"
+	    	    android:text="X"
+	    	    android:textColor="@color/nav_value"
+	    	    android:textSize="12sp"
+	    	    android:textStyle="bold"
+	    	    android:typeface="sans"
+	    	    android:gravity="right"
+	    	    android:textAllCaps="true" />
+	    	<TextView
+	    	    android:layout_width="0dp"
+	    	    android:layout_weight=".25"
+	    	    android:layout_height="wrap_content"
+	    	    android:padding="10dp"
+	    	    android:text="@string/bot"
+	    	    android:textColor="@color/bot"
+	    	    android:textSize="12sp"
+	    	    android:textStyle="bold"
+	    	    android:typeface="sans"
+	    	    android:textAllCaps="true" />
+	    	<TextView
+	    	    android:id="@+id/bot"
+	    	    android:layout_width="0dp"
+	    	    android:layout_weight=".25"
+	    	    android:layout_height="wrap_content"
+	    	    android:padding="10dp"
+	    	    android:text="O"
+	    	    android:textColor="@color/nav_value"
+	    	    android:textSize="12sp"
+	    	    android:textStyle="bold"
+	    	    android:typeface="sans"
+	    	    android:gravity="right"
+	    	    android:textAllCaps="true" />
+        </LinearLayout>
+        
+      	<RelativeLayout
+            android:id="@+id/board"
+            android:layout_below="@+id/nav"
+            android:layout_width="match_parent"
+    		android:layout_height="320dp">
+			<!-- 1 / 2 / 3 -->
+		    <Button
+		        android:id="@+id/tile1"
+		        android:layout_width="@dimen/tile_width"
+		        android:layout_height="@dimen/tile_height"
+		        android:background="@drawable/tile"
+		        android:textColor="@color/tile_color"
+	    	    android:textSize="30sp"
+	    	    android:textStyle="bold"
+	    	    android:typeface="sans"
+		        android:layout_alignTop="@+id/tile2"
+		        android:layout_toLeftOf="@+id/tile2" />
+		    <Button
+		        android:id="@+id/tile2"
+		        android:layout_width="@dimen/tile_width"
+		        android:layout_height="@dimen/tile_height"
+		        android:background="@drawable/tile"
+		        android:textColor="@color/tile_color"
+	    	    android:textSize="30sp"
+	    	    android:textStyle="bold"
+	    	    android:typeface="sans"
+		        android:layout_above="@+id/tile5"
+		        android:layout_alignLeft="@+id/tile5" />
+		    <Button
+		        android:id="@+id/tile3"
+		        android:layout_width="@dimen/tile_width"
+		        android:layout_height="@dimen/tile_height"
+		        android:background="@drawable/tile"
+		        android:textColor="@color/tile_color"
+	    	    android:textSize="30sp"
+	    	    android:textStyle="bold"
+	    	    android:typeface="sans"
+		        android:layout_alignTop="@+id/tile2"
+		        android:layout_toRightOf="@+id/tile2" />
+		    <!-- 4 / 5 / 6 -->
+		    <Button
+		        android:id="@+id/tile4"
+		        android:layout_width="@dimen/tile_width"
+		        android:layout_height="@dimen/tile_height"
+		        android:background="@drawable/tile"
+		        android:textColor="@color/tile_color"
+	    	    android:textSize="30sp"
+	    	    android:textStyle="bold"
+	    	    android:typeface="sans"
+		        android:layout_alignTop="@+id/tile5"
+		        android:layout_toLeftOf="@+id/tile5" />
+		    <Button
+		        android:id="@+id/tile5"
+		        android:layout_width="@dimen/tile_width"
+		        android:layout_height="@dimen/tile_height"
+		        android:background="@drawable/tile"
+		        android:textColor="@color/tile_color"
+	    	    android:textSize="30sp"
+	    	    android:textStyle="bold"
+	    	    android:typeface="sans"
+		        android:layout_centerInParent="true" />
+		    <Button
+		        android:id="@+id/tile6"
+		        android:layout_width="@dimen/tile_width"
+		        android:layout_height="@dimen/tile_height"
+		        android:background="@drawable/tile"
+		        android:textColor="@color/tile_color"
+	    	    android:textSize="30sp"
+	    	    android:textStyle="bold"
+	    	    android:typeface="sans"
+		        android:layout_above="@+id/tile9"
+		        android:layout_toRightOf="@+id/tile5" />
+		    <!-- 7 / 8 / 9 -->
+		    <Button
+		        android:id="@+id/tile7"
+		        android:layout_width="@dimen/tile_width"
+		        android:layout_height="@dimen/tile_height"
+		        android:background="@drawable/tile"
+		        android:textColor="@color/tile_color"
+	    	    android:textSize="30sp"
+	    	    android:textStyle="bold"
+	    	    android:typeface="sans"
+		        android:layout_alignTop="@+id/tile8"
+		        android:layout_toLeftOf="@+id/tile8" />
+			<Button
+			    android:id="@+id/tile8"
+		        android:layout_width="@dimen/tile_width"
+		        android:layout_height="@dimen/tile_height"
+		        android:background="@drawable/tile"
+		        android:textColor="@color/tile_color"
+	    	    android:textSize="30sp"
+	    	    android:textStyle="bold"
+	    	    android:typeface="sans"
+			    android:layout_alignLeft="@+id/tile5"
+			    android:layout_below="@+id/tile5" />
+		    <Button
+		        android:id="@+id/tile9"
+		        android:layout_width="@dimen/tile_width"
+		        android:layout_height="@dimen/tile_height"
+		        android:background="@drawable/tile"
+		        android:textColor="@color/tile_color"
+	    	    android:textSize="30sp"
+	    	    android:textStyle="bold"
+	    	    android:typeface="sans"
+		        android:layout_below="@+id/tile5"
+		        android:layout_toRightOf="@+id/tile5" />
+		</RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:background="@color/result_background">
+	    	<TextView
+	    	    android:id="@+id/result"
+	    	    android:layout_width="match_parent"
+	    	    android:layout_height="wrap_content"
+	    	    android:padding="3dp"
+	    	    android:text="@string/result_default"
+	    	    android:textColor="@color/result"
+	    	    android:textSize="16sp"
+	    	    android:textStyle="bold"
+	    	    android:typeface="sans"
+	    	    android:gravity="center" />
+	    	<TextView
+	    	    android:layout_width="match_parent"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_below="@+id/result"
+	    	    android:padding="3dp"
+	    	    android:text="@string/result_label"
+	    	    android:textColor="@color/result_label"
+	    	    android:textSize="12sp"
+	    	    android:textStyle="bold"
+	    	    android:typeface="sans"
+	    	    android:gravity="center"
+	    	    android:textAllCaps="true" />
+        </RelativeLayout>
+        
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tile_border">5dp</dimen>   
+    <dimen name="tile_width">100dp</dimen>   
+    <dimen name="tile_height">100dp</dimen>
+    <dimen name="splash_button_margin">50dp</dimen>
+    <dimen name="splash_button_padding">15dp</dimen>
+</resources>
